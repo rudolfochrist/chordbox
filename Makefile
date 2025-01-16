@@ -29,32 +29,37 @@ clean:
 distclean: clean
 	-rm -f config.mk config.status config.lisp
 
-install: all installdirs install-info
+install: all installdirs # install-info
+	$(INSTALL_PROGRAM) $(PROGRAM) $(DESTDIR)$(bindir)/$(PROGRAM)
+	$(INSTALL_DATA) README.org $(DESTDIR)$(docdir)/README.org
 
 uninstall: uninstall-info
+	-rm -f $(DESTDIR)$(bindir)/$(PROGRAM)
+	-rm -f $(DESTDIR)$(docdir)/README.org
 
 installdirs:
-	$(MKDIR_P) $(DESTDIR)$(pkgdocdir)
-	$(MKDIR_P) $(DESTDIR)$(infodir)
+	$(MKDIR_P) $(DESTDIR)$(bindir)
+	$(MKDIR_P) $(DESTDIR)$(docdir)
+	# $(MKDIR_P) $(DESTDIR)$(infodir)
 
-info: $(PACKAGE_NAME).info
+# info: $(PACKAGE_NAME).info
 
-$(PACKAGE_NAME).info: documentation/$(PACKAGE_NAME).texi documentation/dict.texi
-	$(MAKEINFO) $(srcdir)/$<
+# $(PACKAGE_NAME).info: documentation/$(PACKAGE_NAME).texi documentation/dict.texi
+# 	$(MAKEINFO) $(srcdir)/$<
 
-documentation/dict.texi: $(ASDSRCS) $(LISPSRCS) version config.lisp
-	$(CL) $(CLFLAGS) \
-	--load config.lisp \
-	--eval '(asdf:make "$(PACKAGE_NAME)/documentation")'
+# documentation/dict.texi: $(ASDSRCS) $(LISPSRCS) version config.lisp
+# 	$(CL) $(CLFLAGS) \
+# 	--load config.lisp \
+# 	--eval '(asdf:make "$(PACKAGE_NAME)/documentation")'
 
-install-info: $(PACKAGE_NAME).info installdirs
-	$(INSTALL_DATA) $< $(DESTDIR)$(infodir)/$<
-	# run install-info if available
-	if $(SHELL) -c 'install-info --version' \
-	   >/dev/null 2>&1; then \
-	   install-info --dir-file="$(DESTDIR)$(infodir)/dir" \
-	                "$(DESTDIR)$(infodir)/$<"; \
-	else true; fi
+# install-info: $(PACKAGE_NAME).info installdirs
+# 	$(INSTALL_DATA) $< $(DESTDIR)$(infodir)/$<
+# 	# run install-info if available
+# 	if $(SHELL) -c 'install-info --version' \
+# 	   >/dev/null 2>&1; then \
+# 	   install-info --dir-file="$(DESTDIR)$(infodir)/dir" \
+# 	                "$(DESTDIR)$(infodir)/$<"; \
+# 	else true; fi
 
-uninstall-info:
-	-rm -f $(DESTDIR)$(infodir)/$(PACKAGE_NAME).info
+# uninstall-info:
+# 	-rm -f $(DESTDIR)$(infodir)/$(PACKAGE_NAME).info
