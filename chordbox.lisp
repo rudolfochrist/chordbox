@@ -105,4 +105,4 @@
     (generate-chordbox (first components)
                        (second components)
                        (list (char-number (char (third components) 0))
-                             (char-number (char (third components) 1))))))
+                             (parse-integer (third components) :start 1)))))
