@@ -1,0 +1,16 @@
+esrap, ghcr.io/ocicl/esrap@sha256:0d49d836fc823e6e369e03dcdab3c6cfd04dfe0eaaf8dabbee96865bb856713f, esrap-20240514-d9d4100/esrap.asd
+alexandria, ghcr.io/ocicl/alexandria@sha256:e433c2e076ed3bcf8641b97b00192680db2201d305efac9293539dee88c7fbf7, alexandria-20240503-8514d8e/alexandria.asd
+trivial-with-current-source-form, ghcr.io/ocicl/trivial-with-current-source-form@sha256:955baad39fb52d9d02af21ea36442c9675419c2486392279f669ada9788f3e3b, trivial-with-current-source-form-20240503-dc3fff9/trivial-with-current-source-form.asd
+plump, ghcr.io/ocicl/plump@sha256:8597b5b0099ec025a0415289ec20a9efb85c20574c428078c20c6808723cd02a, plump-20250113-52826b6/plump.asd
+plump-parser, ghcr.io/ocicl/plump@sha256:8597b5b0099ec025a0415289ec20a9efb85c20574c428078c20c6808723cd02a, plump-20250113-52826b6/plump-parser.asd
+plump-lexer, ghcr.io/ocicl/plump@sha256:8597b5b0099ec025a0415289ec20a9efb85c20574c428078c20c6808723cd02a, plump-20250113-52826b6/plump-lexer.asd
+plump-dom, ghcr.io/ocicl/plump@sha256:8597b5b0099ec025a0415289ec20a9efb85c20574c428078c20c6808723cd02a, plump-20250113-52826b6/plump-dom.asd
+array-utils, ghcr.io/ocicl/array-utils@sha256:c6329b6388eb5aad7378c87eb05ec3a67c4dc83aa23202920676ce1faf95ca3b, array-utils-20240607-873888d/array-utils.asd
+array-utils-test, ghcr.io/ocicl/array-utils@sha256:c6329b6388eb5aad7378c87eb05ec3a67c4dc83aa23202920676ce1faf95ca3b, array-utils-20240607-873888d/array-utils-test.asd
+multilang-documentation-utils, ghcr.io/ocicl/documentation-utils@sha256:b2a1b3f3bcd1a738af85ae2b0168d408c177661eab6d6bbebb254e394d983f54, documentation-utils-20230511-98630dd/multilang-documentation-utils.asd
+documentation-utils, ghcr.io/ocicl/documentation-utils@sha256:b2a1b3f3bcd1a738af85ae2b0168d408c177661eab6d6bbebb254e394d983f54, documentation-utils-20230511-98630dd/documentation-utils.asd
+trivial-indent, ghcr.io/ocicl/trivial-indent@sha256:5f091cc5d73652d972dde49f008902167751b94f2e8ea9544301156322ae486a, trivial-indent-20250106-fc7380b/trivial-indent.asd
+lquery, ghcr.io/ocicl/lquery@sha256:14f88f41706673c2f04f5f353127c5548450f298265c5652540390d83675b557, lquery-20240503-ac0853d/lquery.asd
+lquery-test, ghcr.io/ocicl/lquery@sha256:14f88f41706673c2f04f5f353127c5548450f298265c5652540390d83675b557, lquery-20240503-ac0853d/lquery-test.asd
+form-fiddle, ghcr.io/ocicl/form-fiddle@sha256:35f72c096e67e2db032a35b7f4cee4ba6cc41902a722e76a5a90011c33b44af5, form-fiddle-20250106-fc4e7e6/form-fiddle.asd
+clss, ghcr.io/ocicl/clss@sha256:7f1f9d5b3856faea5e5d03dd28117b86357d75d39e25fe4419297f0e70e1979a, CLSS-20250113-bd9edf8/clss.asd

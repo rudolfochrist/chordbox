@@ -1,0 +1,29 @@
+# -*- mode: org; -*-
+
+* NAME
+
+chordbox --- Generate chord diagrams the easy way.
+
+* SYNOPSIS
+
+* DESCRIPTION
+
+** FUNCTIONS
+
+** VARIABLES
+
+* AUTHOR
+
+Sebastian Christ ([[mailto:rudolfo.christ@proton.me]])
+
+* COPYRIGHT
+
+Copyright (c) 2025 Sebastian Christ (rudolfo.christ@proton.me)
+
+* LICENSE
+
+Released under the MPL-2.0 license.
+See [[file:LICENSE.txt][LICENSE]].
+
+* SEE ALSO
+
