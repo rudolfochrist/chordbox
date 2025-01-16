@@ -23,7 +23,7 @@ The chord structure consists of 6 tuples. Each tuple consists of guitar string n
 values specify what note to fret. String names are all upper case except the high e string. Blocked strings
 are indicated with a =x=. Open strings with =o=.
 
-#+begin_export ascii
+#+begin_example
 >----------------------- Chord name
 |    >------------------ Chord structure specification
 |    |           >------ Indicates on which fret the page
@@ -31,7 +31,7 @@ are indicated with a =x=. Open strings with =o=.
 |    |           | >---- Fret number
 |    |           | |
 D7 : xxG3D2A3x : 3 5
-#+end_export
+#+end_example
 
 * AUTHOR
 
