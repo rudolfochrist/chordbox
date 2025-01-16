@@ -99,8 +99,10 @@
                           (second note)
                           (first note)))))
     ;; fret marker
-    (let ((fret-marker-fmt (cdr (assoc (first fret-marker) *fret-marker-map*))))
-      (lquery:$ svg (lquery-funcs:append (format nil fret-marker-fmt (second fret-marker)))))))
+    (when fret-marker
+      (let ((fret-marker-fmt (cdr (assoc (first fret-marker) *fret-marker-map*))))
+        (lquery:$ svg (lquery-funcs:append (format nil fret-marker-fmt (second fret-marker))))))
+    doc))
 
 (defun write-chordbox (chordbox file)
   (lquery:$ chordbox (lquery-funcs:write-to-file file))
@@ -110,5 +112,6 @@
   (let ((components (uiop:split-string string :separator '(#\:))))
     (generate-chordbox (first components)
                        (second components)
-                       (list (char-number (char (third components) 0))
-                             (parse-integer (third components) :start 1)))))
+                       (unless (null (third components))
+                         (list (char-number (char (third components) 0))
+                               (parse-integer (third components) :start 1))))))
