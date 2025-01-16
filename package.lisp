@@ -5,5 +5,8 @@
 (defpackage #:chordbox
   (:use :cl)
   (:import-from :esrap
-                #:defrule))
+                #:defrule)
+  (:export
+   #:parse-chord
+   #:write-chordbox))
 
