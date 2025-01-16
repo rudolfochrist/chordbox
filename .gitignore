@@ -1,2 +1,6 @@
 /systems/
 *.fasl
+/chordbox
+/config.mk
+/config.status
+/config.lisp

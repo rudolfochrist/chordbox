@@ -14,3 +14,6 @@ lquery, ghcr.io/ocicl/lquery@sha256:14f88f41706673c2f04f5f353127c5548450f298265c
 lquery-test, ghcr.io/ocicl/lquery@sha256:14f88f41706673c2f04f5f353127c5548450f298265c5652540390d83675b557, lquery-20240503-ac0853d/lquery-test.asd
 form-fiddle, ghcr.io/ocicl/form-fiddle@sha256:35f72c096e67e2db032a35b7f4cee4ba6cc41902a722e76a5a90011c33b44af5, form-fiddle-20250106-fc4e7e6/form-fiddle.asd
 clss, ghcr.io/ocicl/clss@sha256:7f1f9d5b3856faea5e5d03dd28117b86357d75d39e25fe4419297f0e70e1979a, CLSS-20250113-bd9edf8/clss.asd
+adopt, ghcr.io/ocicl/adopt@sha256:129b66dd5e675fc157f8134277c49ec43eaf3269a13979ff1be1522e143e4588, adopt-20240613-2b340c4/adopt.asd
+bobbin, ghcr.io/ocicl/bobbin@sha256:7368d88e9f1d8a94b9bddf5e1887e384ef738235570142dd1cfe98c90077cc13, bobbin-20240503-b454e82/bobbin.asd
+split-sequence, ghcr.io/ocicl/split-sequence@sha256:3a37662eedd99c42995587b9d443c4631f25c4c523091bcca31a27b880585b8e, split-sequence-2.0.1/split-sequence.asd
