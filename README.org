@@ -6,11 +6,32 @@ chordbox --- Generate chord diagrams the easy way.
 
 * SYNOPSIS
 
+#+begin_src sh
+$ chordbox -o d7.svg 'D7:xxG3D2A3x:35'
+#+end_src
+
 * DESCRIPTION
 
-** FUNCTIONS
+This tool generates a five fret chord diagrams in SVG format from a given specification string.
 
-** VARIABLES
+** SPECIFICATION STRING
+
+The specification consists of three segments separated by =:=. The first segment specifies the chord name. The
+middle segment specifies the chord structure and the last segment specifies the fret marker.
+
+The chord structure consists of 6 tuples. Each tuple consists of guitar string name and fret number. Those two
+values specify what note to fret. String names are all upper case except the high e string. Blocked strings
+are indicated with a =x=. Open strings with =o=.
+
+#+begin_verse
+>----------------------- Chord name
+|    >------------------ Chord structure specification
+|    |           >------ Indicates on which fret the page
+|    |           |       number should be placed
+|    |           | >---- Fret number
+|    |           | |
+D7 : xxG3D2A3x : 3 5
+#+end_verse
 
 * AUTHOR
 
@@ -26,4 +47,3 @@ Released under the MPL-2.0 license.
 See [[file:LICENSE.txt][LICENSE]].
 
 * SEE ALSO
-
